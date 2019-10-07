@@ -1,0 +1,581 @@
+/* =============== */
+/* BASIC SETUP */
+/* =============== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    text-rendering: optimizeLegibility;
+    line-height: 1.3;
+}
+
+ul li {
+    list-style: none;
+}
+h1 {
+    font-size: 6rem;
+    font-weight: 200;
+}
+/* ==================== */
+/* RESUABLE COMPONENTS */
+/* ==================== */
+
+.row {
+    max-width: 114rem;
+    margin: 0 auto;
+}
+section {
+    padding: 8rem 0;
+
+}
+h2 {
+    font-size: 4rem;
+    text-transform: capitalize;
+    letter-spacing: .3rem;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: #252726;
+    text-align: center;
+}
+h2::after {
+    content: "";
+    display: block;
+    height: .3rem;
+    background: rgb(93, 178, 164);
+    width: 15.5rem;
+    margin: auto;
+    margin-top: 2rem;
+}
+h3 {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+}
+.box {
+    padding: 1%;
+}
+.box p {
+    font-size: 1.6rem;
+    font-weight: normal;
+    margin-top: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+.little-description {
+    font-size: 1.8rem;
+    width: 60%;
+    margin: auto;
+    line-height: 3rem;
+}
+.btn:link,
+.btn:visited,
+.btn {
+    background: none;
+    border: .1rem solid #fff;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.5rem 6rem;  
+    border-radius: .3rem;
+    display: inline-block;  
+    margin-top: 4.5rem;
+    background-color: rgba(32, 28, 34, 0.1);
+    font-size: 1.5rem;
+    font-weight: 400;
+    
+}
+
+
+
+/* ==================== */
+/* HEADER SECTION */
+/* ==================== */
+
+header {
+    background: linear-gradient(rgba(45, 43, 46, 0.9), rgba(45, 43, 46, 0.9)), url('./img/hero-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 95vh;
+    position: relative;
+    background-attachment: fixed;
+    background-color: #252726
+}
+.logo {
+    height: 3.5rem;
+    width: auto;
+    margin-top: 2.5rem;
+    float: left;
+}
+/* main navigation */
+nav {
+    background-color: #fff;
+    width: 100%;
+    height: 8.1rem;
+}
+.main-nav {
+    float: right;
+    margin-top: 4rem;
+    
+}
+.main-nav li {
+    display: inline-block;
+    margin-left: 2.5rem;
+}
+.main-nav li:first-child {
+    margin-left: 0;
+}
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #252726;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgba(100, 58, 121, 0);
+    padding-top: .3rem 1.6rem;
+    font-size: 1.6rem;
+    padding-bottom: 2rem;
+    transition: .3s;
+
+}
+.main-nav li:hover a:link,
+.main-nav li:hover a:visited {
+    border-bottom: .3rem solid #00e1ff;
+    color: #00e1ff;
+}
+.active {
+    color: #00e1ff
+}
+/*  STICKY */
+.sticky {
+    position: fixed;
+    width: 100%;
+    top: 
+}
+
+
+
+.hero-text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-weight: 100;
+}
+.btn-hero:link:hover,
+.btn-hero:visited:hover {
+    background: rgb(27, 26, 26);
+}
+/* ==================== */
+/* SERVICE SECTION */
+/* ==================== */
+.services-section {
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)), url('./img/services-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    color: #252726
+    text-align: center;
+}
+.services-section h2::after {
+    background: ##14a58c;
+}
+.services-section .box p {
+    width: 100%;
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #252726;
+}
+.services-icon {
+    height: 15rem;
+    margin-bottom: 3.5rem;
+    margin-top: 4.5rem;
+    margin-left: 5rem;
+}
+
+
+/* ==================== */
+/* HEADER SECTION */
+/* ==================== */
+.responsive-section {
+    background: linear-gradient(rgb(234, 234, 234, 1), rgba(234, 234, 234, 1));
+    color: #fff;
+    text-align: center;
+}
+.responsive-section .top-btn {
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    width: 50%;
+    height: 5rem;
+    font-size: 1.5rem;
+    color: #252726;
+    text-transform: uppercase;
+    background: rgba(169, 230, 220, 0);
+    border: .1rem solid #252726;
+    margin-bottom: 8.5rem;
+
+}
+.responsive-section .top-btn:hover {
+    background: #090a09;
+    color: #00e1ff;
+}
+
+.responsive-section h2 {
+    color: #252726;
+    text-align: left;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+.responsive-section p {
+    color: #252726;
+    width: 100%;
+    text-align: left;
+    text-transform: none;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+
+}
+.responsive-section h2::after {
+    display: none;
+}
+.responsive-section .btn-respon {
+    width: 17rem;
+    height: 5rem;
+    border: .1rem solid #00e1ff;
+    background: rgba(255, 255, 255, 0);
+    float: left;
+    font-size: 1.6rem;
+    color: #00e1ff;
+    text-transform: uppercase;
+}
+.responsive-section .btn-respon:hover {
+    background: #090a09;
+}
+
+/* ==================== */
+/* CHANNEL SECTION */
+/* ==================== */
+.channel-section {
+    background: #252726;
+    margin-bottom: 0;
+    
+}
+.channel-section p {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+
+}
+.channel-section img {
+    overflow: hidden;
+    align-items: center;
+    margin-left: 10rem;
+    margin-top: 8rem;
+}
+.channel-section h2 {
+    color: #fff;
+}
+/* ==================== */
+/* ABOUT SECTION */
+/* ==================== */
+.about-section {
+    background: #fff;
+
+}
+.about-section h2 {
+    margin-top: 2rem;
+}
+.about-section .row .pra {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5rem;
+
+}
+.team-member {
+    margin-top: 4.5rem;
+    margin-bottom: 3.5rem;
+    margin-left: 2.2rem;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%; 
+    
+
+}
+.about-section h3 {
+    color: #27283d;
+    text-align: center;
+}
+.roll {
+    color: #30ba27;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    display: inline-block;
+    margin-top: .5rem;
+    text-align: right;
+    margin-left: 4rem;
+}
+.about-section .role {
+    text-align: center;
+}
+.about-section .box p  {
+    text-transform: none;
+    text-align: center;
+    color: #252726;
+}
+.social-link {
+    
+    margin-top: 3.5rem;
+    margin-left: 1.6rem;
+
+}
+.social-link ul li {
+    display: inline-block;
+    margin: 0 .5rem;
+
+}
+.social-link ul li a {
+    color: #ffffff;
+}
+.social-link ul li a:link i::before {
+    font-size: 2rem;
+    display: inline-block;
+    background: #bdd1df;
+    width: 2rem;
+    height: 2rem;
+    padding: 1rem;
+    border-radius: 50%;
+    transition: .5s;
+}
+.social-link ul li a:hover i::before {
+    background: #393939;
+    transform: rotate(360deg);
+}
+.subabout-section {
+    background: #f7f7f7;
+}
+.subabout-section img {
+    width: 52rem;
+    height: 26rem;
+}
+.subabout-section .about-descrip {
+    width: 52rem;
+    height: 26rem;
+    margin-left: 0;
+    border: .1rem solid #252726;
+    padding: 2rem;
+}
+.subabout-section .about-descrip h3 {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+.subabout-section .about-descrip p {
+    font-size: 1.5rem;
+    text-align: left;
+    width: 100%;
+}
+
+/* ==================== */
+/* MODERN SECTION */
+/* ==================== */
+.modern-section {
+    padding-top: 14rem;
+    background: #252726;
+    margin-bottom: 0;
+}
+
+.modern-section img {
+    width: 74rem;
+    
+}
+
+.modern-section h3 {
+    margin-top: 5rem;
+    text-align: left;
+    color: #fff;
+    font-size: 2.5rem;
+}
+.modern-section p {
+    margin-top: 3rem;
+    font-size: 1.6rem;
+    color: #fff;
+    width: 100%;
+}
+.modern-section h3::after {
+    content: "";
+    display: block;
+    height: .3rem;
+    background: rgb(93, 178, 164);
+    width: 6.5rem;
+    margin-left: 0;
+    margin-top: 2rem;
+}
+
+/* ==================== */
+/* MODERN SECTION */
+/* ==================== */
+
+.new-section {
+    background: #fff;
+}
+.new-section .praone {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #252726;
+    margin-top: 3rem;
+}
+.some-margin {
+    margin-bottom: 12rem;
+}
+.new-section .box-one {
+    border: 0.1rem solid #252726;
+    height: 21.6rem;
+    
+}
+.new-section h3 {
+    text-transform: capitalize;
+    font-size: 2.2rem;
+    color: #252726;
+    text-align: center;
+    margin-top: 3rem;
+}
+.new-section h4 {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    color: #00e1ff;
+    text-align: center;
+    margin-top: 0.6rem;
+
+    
+}
+.new-section .box-one p {
+    font-size: 1.5rem;
+    color: #252726;
+    text-transform: none;
+    padding: 0 2rem;
+}
+
+/* ==================== */
+/* SUSCRIB SECTION */
+/* ==================== */
+.subscrib-section {
+    background: #252726;
+}
+.subscrib-section h3 {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 2.2rem;
+    margin-top: 3rem;
+}
+.subscrib-section .btn-sub {
+    margin-left: 47rem;
+    border: .1rem solid #00e1ff;
+    margin-bottom: 2rem;
+    border-radius: 0;
+    border-radius: none;
+}
+.subscrib-section .btn-sub:hover {
+    cursor: pointer;
+    color: #00e1ff;
+    background: #f7f7f7;
+}
+
+.contact-section {
+    background: #131316;
+    position: relative;
+    
+}
+.contact-section h2 {
+    color: #fff;
+}
+.contact-section h2::after {
+    background: #00e1ff;
+}
+.contact-section .little-description {
+    text-transform: none;
+    color: #fff;
+    width: 70%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.contact-section form {
+    margin-top: 5rem;
+    width: 70%;
+    margin-left: 15%;
+
+}
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea {
+    background: #131316;
+    /* border: .1rem solid #fff; */
+    width: 100%;
+    padding: 1.5rem;
+    /* border-radius: .5rem; */
+    font-size: 1.8rem;
+    margin: .5rem 0;
+    border: none;
+    border-bottom: .1rem solid #fff;
+    border-left: .1rem solid #fff;
+    border-right: .1rem solid #fff;
+    border-radius: none;
+}
+.contact-section textarea {
+    margin-top: 8rem;
+    height: 10rem;
+}
+.contact-section form ::placeholder {
+    color: #fff;
+    opacity: 0.8;
+}
+.btn-submit {
+    text-transform: capitalize;
+    border: .1rem solid #199ec5;
+    background: #131316;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+   
+}
+.btn-submit:hover {
+    cursor: pointer;
+    color: #00e1ff;
+    background: #f7f7f7;
+}
+
+/* =============== */
+/* FOOTER SETUP */
+/* =============== */
+.footer-section {
+    background: #f7f7f7;
+    padding: 2rem 0;
+    text-align: center;
+    border-top: .1rem solid rgba(255, 255, 255, 0.3);
+}
+.footer-section li {
+    display: inline-block;
+    margin: 0 2rem;
+}
+.footer-section li a {
+    color: #131316;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+.footer-section li:hover a {
+    color: #00e1ff;
+}
